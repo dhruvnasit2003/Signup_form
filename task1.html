@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Signup</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label for="phone">Phone No:</label>
+        <input type="text" id="phone" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required pattern=".+@charusat\.ac\.in"><br>
+
+        <label for="state">State:</label>
+        <select id="state" required>
+            <option value="">Select State</option>
+            <option value="state1">Guj</option>
+            <option value="state2">Mah</option>
+            <option value="state3">Pun</option>
+        </select><br>
+
+        <label for="agreement">Agreement:</label>
+        <input type="checkbox" id="agreement" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
